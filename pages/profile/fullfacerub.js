@@ -17,6 +17,10 @@ const Profile = () => {
     // getFeedData('@fullfacerub');
   }, [])
 
+  if (!profileData.handle) {
+    return <p>...Loading</p>
+  }
+
   return (
   <div style={{
     display: 'flex',
